@@ -30,7 +30,7 @@ def update(frame_number, rolls, faces, frequencies):
 number_of_frames = int(sys.argv[1])  
 rolls_per_frame = int(sys.argv[2])  
 
-sns.set_style('whitegrid')  # white backround with gray grid lines
+sns.set_style('whitegrid')  # white background with gray grid lines
 figure = plt.figure('Rolling a Six-Sided Die')  # Figure for animation
 values = list(range(1, 7))  # die faces for display on x-axis
 frequencies = [0] * 6  # six-element list of die frequencies
