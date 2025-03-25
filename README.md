@@ -1,5 +1,7 @@
-University of Texas - Post Graduate Program in Data Science and Business Analytics \
-  Topics: Python \
+### University of Texas - Post Graduate Program in Data Science and Business Analytics
+_________________________________________________________________________________________
+  Topics: \
+          Python \
           Inferential Statistics \
           Hypothesis Testing \
           Supervised Learning - Foundations \
@@ -8,7 +10,9 @@ University of Texas - Post Graduate Program in Data Science and Business Analyti
           Model Tuning \
           Unsupervised Learning
 
-Books:          
+
+### Books
+_________________________________________________________________________________________
 An Introduction to Statistical Learning: by Gareth  \
 Causal Inference In Python: by Matheus Facure \
 Data Preprocessing in Python: by Roy Jafari \
