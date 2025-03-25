@@ -13,7 +13,8 @@ ________________________________________________________________________________
 
 ### Books
 _________________________________________________________________________________________
-An Introduction to Statistical Learning: by Gareth  \
+An Introduction to Statistical Learning: by Gareth
+
 Causal Inference In Python: by Matheus Facure \
 Data Preprocessing in Python: by Roy Jafari \
 Dive in Algorithms: by Bradford Tuckfield \
