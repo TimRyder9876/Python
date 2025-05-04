@@ -23,6 +23,8 @@ Dive in Algorithms: by Bradford Tuckfield
 
 Dive Into Data Science: by Bradford Tuckfield
 
+Hands-On Machine Learning with Scikit-Learn, Keras, Tensorflow: by Aurelian Geron
+
 Intro to Python for Computer Science and Data Science: by Paul Deitel and Harvey Deitel
 
 Machine Learning Pocket Reference: by Matt Harrison
