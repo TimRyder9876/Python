@@ -19,6 +19,8 @@ Causal Inference In Python: by Matheus Facure
 
 Data Preprocessing in Python: by Roy Jafari
 
+Data Science from Scratch: by Joel Grus
+
 Dive in Algorithms: by Bradford Tuckfield
 
 Dive Into Data Science: by Bradford Tuckfield
