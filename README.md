@@ -25,6 +25,8 @@ Dive in Algorithms: by Bradford Tuckfield
 
 Dive Into Data Science: by Bradford Tuckfield
 
+Feature Engineering for Machine Learning: by Alice Zheng & Amanda Casari
+
 Hands-On Machine Learning with Scikit-Learn, Keras, Tensorflow: by Aurelian Geron
 
 Intro to Python for Computer Science and Data Science: by Paul Deitel and Harvey Deitel
@@ -32,6 +34,10 @@ Intro to Python for Computer Science and Data Science: by Paul Deitel and Harvey
 Machine Learning Pocket Reference: by Matt Harrison
 
 Practical Statistics fo Data Scientists: by Peter Bruce, Andrew Bruce, and Peter Gedeck
+
+Python Beast Series = REgular Expression: Dargslan Publishing
+
+Python for Accounting: by Hayden Van Der Post
 
 Python For Data Science: by Yuli Vasiliev
 
