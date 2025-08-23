@@ -1,1 +1,15 @@
-test
+Two projects:
+
+1) Scrape quotes.toscrape.com
+  * Run 
+  * Go to https://quotes.toscrape.com/tag/humor/ URL
+  * Retrieve the items author and quote text from the page
+  * Store the item objects to the QuotesProjectItem item class 
+  * Follow the next page using the href tag
+  * Retrieve the items author and quote text from the new page
+  * Store the item objects to the QuotesProjectItem item class in items.py
+  * Open the pipelines.py from the ITEM_PIPELINES in the settings.py 
+  * Open an instance of a cursor and a mySQL database connection
+  * Create the quotes table if iit does not exist
+  * Save the author and text objects to the table
+  * Close the database and cursor
