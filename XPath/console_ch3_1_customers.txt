@@ -1,0 +1,94 @@
+$x('starts-with("word","w")')
+true
+$x('starts-with("word","o")')
+false
+$x('contains("word","or")')
+true
+$x('starts-with(//postcode,"SW")')
+true
+$x('starts-with(//phone,"07")')
+true
+$x('contains(//email,"@")')
+true
+$x('contains(//email, //surname)')
+true
+$x('contains("Smith, Jones, Williams, Taylor, Davies", //surname)')
+true
+$x('//customer[starts-with(//postcode, "SW")]')
+[customer#c10089]
+$x('//postcode[starts-with(.,"SW")]')
+[postcode]
+$x('//phone[starts-with(.,"07")]')
+[phone]
+$x('//emails[not(contains(.,"@"))]')
+[]
+$x('//customer[contains(//email, //surname)]')
+[customer#c10089]
+$x('//customer[contains("Smith, Jones, Williams, Taylor, Davies", //surname)]')
+[customer#c10089]
+$x('substring-before("sometext","e")')
+'som'
+$x('substring-after("some text","e")')
+' text'
+$x('substring-after(substring-after("some text","e"),"e")')
+'xt'
+$x('substring-after("some text", "te")')
+'xt'
+$x('substring-before(//postcode, " ")')
+'SW1A'
+$x('substring-after(//email,"@")')
+'example.com'
+$x('substring-before(substring-after(//date_of_birth, "-"),"-")')
+'06'
+$x('//customer[contains(substring-after(//email,"@"),"example.com")]')
+[customer#c10089]
+$x('//customer[substring-after(//email,"@")="example.com"]')
+[customer#c10089]
+$x('substring(//date_of_birth,6,2)')
+'06'
+$x('number(substring(//date_of_birth,6,2))')
+6
+$x('translate("old dog","old","new")')
+'new wng'
+$x('translate("old dog", "old", "y")')
+'y yg'
+$x('translate(//phone, " ", "")')
+'07070123456'
+$x('translate("Old dog", "old", "new")')
+'Oew wng'
+$x('translate(//city, "lond", "LOND")')
+'LONDON'
+$x('normalize-space("old    dog")')
+'old dog'
+$x('normalize-space(//name)')
+'Mr John Smith'
+$x('normalize-space(//address)')
+'Big Ben London SW1A 0AA'
+$x('concat("ab","cd","ef")')
+'abcdef'
+$x('normalize-space(//customer)')
+'Mr John Smith 1970-06-25 Clock Cleaner Big Ben London SW1A 0AA 07070 123456 john.Smith@example.com'
+$x('normalize-space()')
+`/* Copyright 2014 The Chromium Authors * Use of this source code is governed by a BSD-style license that can be * found in the LICENSE file. */ :root { color-scheme: light dark; } div.header { border-bottom: 2px solid black; padding-bottom: 5px; margin: 10px; } @media (prefers-color-scheme: dark) { div.header { border-bottom: 2px solid white; } } div.folder > div.hidden { display:none; } div.folder > span.hidden { display:none; } .pretty-print { margin-top: 1em; margin-left: 20px; font-family: monospace; font-size: 13px; } #webkit-xml-viewer-source-xml { display: none; } .opened { margin-left: 1em; } .comment { white-space: pre; } .folder-button { user-select: none; cursor: pointer; display: inline-block; margin-left: -10px; width: 10px; background-repeat: no-repeat; background-position: left top; vertical-align: bottom; } .fold { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>"); height: 10px; } .open { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>"); height: 10px; } Mr John Smith 1970-06-25 Clock Cleaner Big Ben London SW1A 0AA 07070 123456 john.Smith@example.com This XML file does not appear to have any style information associated with it. The document tree is shown below.<customer id="c10089"> <name> <title>Mr</title> <first_name>John</first_name> <surname>Smith</surname> ...</name> <date_of_birth>1970-06-25</date_of_birth> <job_title>Clock Cleaner</job_title> <address> <building>Big Ben</building> <street/> <city>London</city> <postcode>SW1A 0AA</postcode> ...</address> <contact> <phone>07070 123456</phone> <email>john.Smith@example.com</email> ...</contact> ...</customer>`
+$x('normalize-space(/)')
+`/* Copyright 2014 The Chromium Authors * Use of this source code is governed by a BSD-style license that can be * found in the LICENSE file. */ :root { color-scheme: light dark; } div.header { border-bottom: 2px solid black; padding-bottom: 5px; margin: 10px; } @media (prefers-color-scheme: dark) { div.header { border-bottom: 2px solid white; } } div.folder > div.hidden { display:none; } div.folder > span.hidden { display:none; } .pretty-print { margin-top: 1em; margin-left: 20px; font-family: monospace; font-size: 13px; } #webkit-xml-viewer-source-xml { display: none; } .opened { margin-left: 1em; } .comment { white-space: pre; } .folder-button { user-select: none; cursor: pointer; display: inline-block; margin-left: -10px; width: 10px; background-repeat: no-repeat; background-position: left top; vertical-align: bottom; } .fold { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L8 0 L4 7 Z'/></svg>"); height: 10px; } .open { background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23909090' width='10' height='10'><path d='M0 0 L0 8 L7 4 Z'/></svg>"); height: 10px; } Mr John Smith 1970-06-25 Clock Cleaner Big Ben London SW1A 0AA 07070 123456 john.Smith@example.com This XML file does not appear to have any style information associated with it. The document tree is shown below.<customer id="c10089"> <name> <title>Mr</title> <first_name>John</first_name> <surname>Smith</surname> ...</name> <date_of_birth>1970-06-25</date_of_birth> <job_title>Clock Cleaner</job_title> <address> <building>Big Ben</building> <street/> <city>London</city> <postcode>SW1A 0AA</postcode> ...</address> <contact> <phone>07070 123456</phone> <email>john.Smith@example.com</email> ...</contact> ...</customer>`
+$x('concat(//first_name, " ", //surname)')
+'John Smith'
+$x('contains(" Smith Jones Williams Taylor Davies ", concat(" ", //surname," "))')
+true
+$x('contains(" Smith Jones Williams Taylor Davies ", concat(" ", "Tay"," "))')
+false
+$x('contains("New York Boston Philadelphia ",concat(" ", "York", " "))')
+true
+$x('contains("NewYork Boston Philadelphia ",concat(" ", "York", " "))')
+false
+$x('contains("#New York#Boston#Philadelphia#",concat("#", "York", "#"))')
+false
+$x('string-length("abcd")')
+4
+$x('string-length(//postcode)')
+8
+$x('string-length(//contact)')
+45
+$x('//customer//*[string-length()<2]')
+[street]

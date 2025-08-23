@@ -1,0 +1,19 @@
+$x('//title[lang("EN")]')
+(2) [title, title]
+$x('//title[lang("en-us")]')
+[title]
+$x(//*[lang("en")]')
+VM185:1 Uncaught SyntaxError: Unexpected end of input
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+$x('//*[lang("en")]')
+(6) [file, header, list, title, title, note]
+$x('//title[not(lang("en")]')
+VM329:1 Uncaught SyntaxError: Failed to execute '$x' on 'CommandLineAPI': The string '//title[not(lang("en")]' is not a valid XPath expression.
+    at <anonymous>:1:1
+(anonymous) @ VM329:1
+$x('//title[not(lang("en"))]')
+(3) [title, title, title]0: title1: titleariaActiveDescendantElement: nullariaAtomic: nullariaAutoComplete: nullariaBrailleLabel: nullariaBrailleRoleDescription: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColIndexText: nullariaColSpan: nullariaControlsElements: nullariaCurrent: nullariaDescribedByElements: nullariaDescription: nullariaDetailsElements: nullariaDisabled: nullariaErrorMessageElements: nullariaExpanded: nullariaFlowToElements: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLabelledByElements: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowIndexText: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributes: NamedNodeMap {0: xml:lang, xml:lang: xml:lang, length: 1}baseURI: "file:///C:/Users/timry/OneDrive/Documents/XPath/XPath-master/Languages.xml"childElementCount: 0childNodes: NodeList [text]children: HTMLCollection []classList: DOMTokenList [value: '']className: ""clientHeight: 0clientLeft: 0clientTop: 0clientWidth: 0currentCSSZoom: 1elementTiming: ""firstChild: textfirstElementChild: nullid: ""innerHTML: "Erfahren Sie XPath Schnell"isConnected: truelastChild: textlastElementChild: nulllocalName: "title"namespaceURI: nullnextElementSibling: titlenextSibling: textnodeName: "title"nodeType: 1nodeValue: nullonbeforecopy: nullonbeforecut: nullonbeforepaste: nullonfullscreenchange: nullonfullscreenerror: nullonsearch: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullouterHTML: "<title xml:lang=\"de\">Erfahren Sie XPath Schnell</title>"ownerDocument: documentparentElement: listparentNode: listpart: DOMTokenList [value: '']prefix: nullpreviousElementSibling: titlepreviousSibling: textrole: nullscrollHeight: 0scrollLeft: 0scrollTop: 0scrollWidth: 0shadowRoot: nullslot: ""tagName: "title"textContent: "Erfahren Sie XPath Schnell"[[Prototype]]: Element2: titlelength: 3[[Prototype]]: Array(0)

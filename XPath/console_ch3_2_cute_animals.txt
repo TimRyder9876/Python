@@ -1,0 +1,38 @@
+$x('//li[.="dogs"]/following-sibling::*')
+(2) [li, li]0: li1: lilength: 2[[Prototype]]: Array(0)
+$x('//li[.="hamsters"]/preceding-sibling::*')
+(2) [li, li]0: li1: lilength: 2[[Prototype]]: Array(0)
+$x('//li[.="red kangaroos"]/preceding-sibling::*[1]')
+[li]0: lilength: 1[[Prototype]]: Array(0)
+$x('//li[.="koala bears"]/preceding-sibling::*[1]')
+[li]0: lilength: 1[[Prototype]]: Array(0)
+$x('//li[.="red kangaroos"]/following-sibling::*[1]')
+[li]0: lilength: 1[[Prototype]]: Array(0)
+$x('string(//li[.="red kangaroos"]/following-sibling::*[1])')
+'tree kangaroos'
+$x('string(//li[.="koala bears"]/preceding-sibling::*[1])')
+'tree kangaroos'
+$x('string(//li[.="koala bears"]/preceding-sibling::*[last()])')
+'kangaroos'
+$x('//*[@id="article"]/descendant::*[position()<4]')
+(3) [h1, div#intro, p]
+$x('//*[@id="article"]/descendant::p[1]')
+[p]
+$x('//*[@id="article"]/descendant-or-self::div')
+(5) [div#article, div#intro, div#global, div#down_under, div#far_east]
+$x('//div')
+(5) [div#article, div#intro, div#global, div#down_under, div#far_east]
+$x('//*[@id="article"]//self::div')
+(5) [div#article, div#intro, div#global, div#down_under, div#far_east]
+$x('//li[.="hamsters"]/ancestor::node()')
+(6) [ul.pets, div#global, div#article, body, html, document]
+$x('//li[.="hamsters"]/ancestor-or-self::node()')
+(7) [li, ul.pets, div#global, div#article, body, html, document]0: li1: ul.pets2: div#global3: div#article4: body5: html6: documentlength: 7[[Prototype]]: Array(0)
+$x('//li[contains(.,"red")]/ancestor::div/h2')
+(2) [h2, h2]0: h21: h2length: 2[[Prototype]]: Array(0)
+$x('//li[contains(.,"red")]/ancestor::div/h2[contains(.,"Asia")]')
+[h2]0: h2length: 1[[Prototype]]: Array(0)
+$x('//li[contains(.,"red") and ancestor::div[contains(h2,"Asia")]]')
+[li]0: lilength: 1[[Prototype]]: Array(0)
+$x('count(//this)')
+0

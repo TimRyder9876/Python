@@ -1,0 +1,63 @@
+$x('//video/node()')
+(13) [text, title, text, presenter, text, description, text, metadata, text, where_found, text, comment, text]
+$x('//video/*')
+(5) [title, presenter, description, metadata, where_found]
+$x('//processing-instruction()')
+[TestTarget]
+$x('//video/comment()')
+[comment]
+$x('//video/title/text()')
+[text]0: textassignedSlot: nullbaseURI: "file:///C:/Users/timry/OneDrive/Documents/XPath/XPath-master/Resources.xml"childNodes: NodeList []data: "Installing Selenium in Visual Studio"firstChild: nullisConnected: truelastChild: nulllength: 36nextElementSibling: nullnextSibling: nullnodeName: "#text"nodeType: 3nodeValue: "Installing Selenium in Visual Studio"ownerDocument: documentparentElement: titleparentNode: titlepreviousElementSibling: nullpreviousSibling: nulltextContent: "Installing Selenium in Visual Studio"wholeText: "Installing Selenium in Visual Studio"[[Prototype]]: Textlength: 1[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+$x('//video/text()')
+(7) [text, text, text, text, text, text, text]
+$x('//book/metadata/keyword[1]')
+(3) [keyword, keyword, keyword]
+$x('//book[1]/metadata/keyword[1]')
+[keyword]
+Sx('//book[1]//keyword[1]')
+VM2630:1 Uncaught ReferenceError: Sx is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2630:1
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+$x('//book[1]//keyword[1]')
+[keyword]
+$x('//index/*[3]/title')
+[title]
+$x('//index/*[url]')
+(2) [webpage, website]
+$x('//index/*[comment()]')
+(4) [video#vd1, audiobook, book#eb2, book#eb3]
+$x('//index/*[@id]')
+(5) [book#eb1, video#vd1, book#eb2, book#pb1, book#eb3]
+$x('//*[@lang]')
+(7) [book#eb1, video#vd1, audiobook, book#eb2, book#pb1, book#eb3, webpage]
+$x('//book[price<10]')
+(3) [book#eb1, book#eb2, book#eb3]
+$x('//video[price<10]')
+[]
+$x('//book[metadata/keyword="Cmd Line"]')
+(2) [book#eb2, book#pb1]
+$x('//book[price > 10]')
+[book#pb1]
+$x('//*[metadata/keyword="Selenium"]')
+[video#vd1]
+$x('//book[@id="eb1"]')
+[book#eb1]
+$x('//*[@lang = "English"]')
+(7) [book#eb1, video#vd1, audiobook, book#eb2, book#pb1, book#eb3, webpage]
+$x('//*[@lang = "English"]/title')
+(6) [title, title, title, title, title, title]
+$x('//book[price <10]/price')
+(3) [price, price, price]
+$x('//book/price[.<10]')
+(3) [price, price, price]
+$x('//book/price/.')
+(4) [price, price, price, price]
+$x('//book/price')
+(4) [price, price, price, price]
+$x('//price[.<5]')
+(3) [price, price, price]

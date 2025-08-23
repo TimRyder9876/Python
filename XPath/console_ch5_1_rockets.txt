@@ -1,0 +1,55 @@
+$x('local-name(//products/*[1]')
+VM143:1 Uncaught SyntaxError: Failed to execute '$x' on 'CommandLineAPI': The string 'local-name(//products/*[1]' is not a valid XPath expression.
+    at <anonymous>:1:1
+(anonymous) @ VM143:1
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+$x('namespace-uri(//products/*[1])')
+'github.com/author-d-armstrong/xpath/space'
+$x('local-name(//products/*[1])')
+'rocket'
+$x('name(//products/*[1])')
+'s:rocket'
+$x('//*[@product_id=34]')
+[f:rocket]
+$x('namespace-uri(//*[@product_id=34])')
+'github.com/author-d-armstrong/xpath/fireworks'
+$x('//@product_id[.=34]')
+[product_id]0: product_idlength: 1[[Prototype]]: Array(0)
+$x('namespace-uri(//@product_id[.=34])')
+''
+$x('//@product_size[.="small"]')
+[]
+$x('//products/*')
+(3) [s:rocket, f:rocket, f:rocket]0: s:rocket1: f:rocket2: f:rocketlength: 3[[Prototype]]: Array(0)
+$x('//products/*[name()="f:rocket"]')
+(2) [f:rocket, f:rocket]0: f:rocketariaActiveDescendantElement: nullariaAtomic: nullariaAutoComplete: nullariaBrailleLabel: nullariaBrailleRoleDescription: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColIndexText: nullariaColSpan: nullariaControlsElements: nullariaCurrent: nullariaDescribedByElements: nullariaDescription: nullariaDetailsElements: nullariaDisabled: nullariaErrorMessageElements: nullariaExpanded: nullariaFlowToElements: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLabelledByElements: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowIndexText: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributes: NamedNodeMap {0: xmlns:f, 1: product_id, 2: f:product_size, xmlns:f: xmlns:f, product_id: product_id, f:product_size: f:product_size, length: 3}baseURI: "file:///C:/Users/timry/OneDrive/Documents/XPath/XPath-master/Rockets.xml"childElementCount: 5childNodes: NodeList(11) [text, f:material, text, material, text, material, text, material, text, f:colour_sparks, text]children: HTMLCollection(5) [f:material, material, material, material, f:colour_sparks]classList: DOMTokenList [value: '']className: ""clientHeight: 0clientLeft: 0clientTop: 0clientWidth: 0currentCSSZoom: 1elementTiming: ""firstChild: textfirstElementChild: f:materialid: ""innerHTML: "\n\t\t<f:material xmlns:f=\"github.com/author-d-armstrong/xpath/fireworks\">rocket-casing</f:material>\n\t\t<material>fuses</material>\n\t\t<material>gunpowder</material>\n\t\t<material>magnesium</material>\n\t\t<f:colour_sparks xmlns:f=\"github.com/author-d-armstrong/xpath/fireworks\">white</f:colour_sparks>\n\t"isConnected: truelastChild: textlastElementChild: f:colour_sparkslocalName: "rocket"namespaceURI: "github.com/author-d-armstrong/xpath/fireworks"nextElementSibling: f:rocketnextSibling: textnodeName: "f:rocket"nodeType: 1nodeValue: nullonbeforecopy: nullonbeforecut: nullonbeforepaste: nullonfullscreenchange: nullonfullscreenerror: nullonsearch: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullouterHTML: "<f:rocket xmlns:f=\"github.com/author-d-armstrong/xpath/fireworks\" product_id=\"34\" f:product_size=\"small\">\n\t\t<f:material>rocket-casing</f:material>\n\t\t<material>fuses</material>\n\t\t<material>gunpowder</material>\n\t\t<material>magnesium</material>\n\t\t<f:colour_sparks>white</f:colour_sparks>\n\t</f:rocket>"ownerDocument: documentparentElement: productsparentNode: productspart: DOMTokenList [value: '']prefix: "f"previousElementSibling: s:rocketpreviousSibling: textrole: nullscrollHeight: 0scrollLeft: 0scrollTop: 0scrollWidth: 0shadowRoot: nullslot: ""tagName: "f:rocket"textContent: "\n\t\trocket-casing\n\t\tfuses\n\t\tgunpowder\n\t\tmagnesium\n\t\twhite\n\t"[[Prototype]]: Element1: f:rocketlength: 2[[Prototype]]: Array(0)
+$x('//products/*[local-name()="rocket"]')
+(3) [s:rocket, f:rocket, f:rocket]
+$x('//*[local-name()="rocket"]')
+(3) [s:rocket, f:rocket, f:rocket]
+$x('//@*[local-name()="product_size"]')
+(3) [s:product_size, f:product_size, f:product_size]
+$x('//*[@*[local-name()="product_size"]="small"]')
+[f:rocket]
+$x('namespace-uri(//*[@*[local-name()="product_size"]="small"])')
+'github.com/author-d-armstrong/xpath/fireworks'
+$x('//*[local-name()="rocket" and namespace-uri()="github.com/author-d-armstrong/xpath/space"]')
+[s:rocket]
+$x('//*[local-name()="material" and namespace-uri()="github.com/author-d-armstrong/xpath/fireworks"]')
+(2) [f:material, f:material]
+$x('//*[local-name()="material" and namespace-uri()!="github.com/author-d-armstrong/xpath/fireworks"]')
+(9) [material, material, s:material, material, material, material, material, material, material]
+$x('//*[local-name()="material" and namespace-uri() !=namespace-uri(//products)]')
+(3) [s:material, f:material, f:material]
+$x('//material')
+(8) [material, material, material, material, material, material, material, material]
+$x('//products/*[name()="f:rocket"]')
+(2) [f:rocket, f:rocket]
+$x('//*[name()="s:material"]')
+[s:material]
+$x('//*[starts-with(name(),"s:")]')
+(2) [s:rocket, s:material]

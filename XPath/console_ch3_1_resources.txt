@@ -1,0 +1,10 @@
+$x('//audiobook/following::*')
+(534) [book#eb2, title, author, series, price, description, metadata, keyword, keyword, keyword, where_found, format, book#pb1, title, author, price, description, metadata, keyword, keyword, keyword, where_found, format, year, book#eb3, title, author, price, description, where_found, where_found, format, format, format, webpage, url, description, website, url, description, metadata, keyword, keyword, format, div.header, span, br, div.pretty-print, div#folder0.folder, div.line, span.folder-button.fold, span.html-tag, div.opened, span, div#folder1.folder, div.line, span.folder-button.fold, span.html-tag, span.html-attribute, span.html-attribute-name, span.html-attribute-value, span.html-attribute, span.html-attribute-name, span.html-attribute-value, div.opened, span, div.line, span.html-tag, span, span.html-tag, span, div.line, span.html-tag, span, span.html-tag, span, div.line, span.html-tag, span, span.html-tag, span, div.line, span.html-tag, span, span.html-tag, span, div#folder2.folder, div.line, span.folder-button.fold, span.html-tag, div.opened, span, div.line, span.html-tag, span, span.html-tag, span, div.line, span.html-tag, span, …]
+$x('//audiobook/following::*[parent::index]')
+(5) [book#eb2, book#pb1, book#eb3, webpage, website]
+$x('//audiobook/preceding::*')
+(22) [where_found, keyword, keyword, keyword, metadata, description, presenter, title, video#vd1, format, where_found, keyword, keyword, keyword, metadata, description, price, author, title, book#eb1, style#xml-viewer-style, head]
+$x('//audiobook/preceding::*[parent::index]')
+(2) [video#vd1, book#eb1]
+$x('//index/*[following::audiobook]')
+(2) [book#eb1, video#vd1]

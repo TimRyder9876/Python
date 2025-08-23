@@ -1,0 +1,6 @@
+$x('//*[namespace-uri()="github.com/author-d-armstrong/xpath/space"]')
+(4) [rocket, material, material, material]
+$x('//material')
+[]
+$x('//@product_id')
+(3) [product_id, product_id, product_id]

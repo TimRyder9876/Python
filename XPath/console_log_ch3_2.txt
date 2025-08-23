@@ -1,0 +1,64 @@
+$x('//book[metadata/keyword[2]="XML"]')
+[book#eb1]0: book#eb1ariaActiveDescendantElement: nullariaAtomic: nullariaAutoComplete: nullariaBrailleLabel: nullariaBrailleRoleDescription: nullariaBusy: nullariaChecked: nullariaColCount: nullariaColIndex: nullariaColIndexText: nullariaColSpan: nullariaControlsElements: nullariaCurrent: nullariaDescribedByElements: nullariaDescription: nullariaDetailsElements: nullariaDisabled: nullariaErrorMessageElements: nullariaExpanded: nullariaFlowToElements: nullariaHasPopup: nullariaHidden: nullariaInvalid: nullariaKeyShortcuts: nullariaLabel: nullariaLabelledByElements: nullariaLevel: nullariaLive: nullariaModal: nullariaMultiLine: nullariaMultiSelectable: nullariaOrientation: nullariaPlaceholder: nullariaPosInSet: nullariaPressed: nullariaReadOnly: nullariaRelevant: nullariaRequired: nullariaRoleDescription: nullariaRowCount: nullariaRowIndex: nullariaRowIndexText: nullariaRowSpan: nullariaSelected: nullariaSetSize: nullariaSort: nullariaValueMax: nullariaValueMin: nullariaValueNow: nullariaValueText: nullassignedSlot: nullattributes: NamedNodeMap {0: id, 1: lang, id: id, lang: lang, length: 2}baseURI: "file:///C:/Users/timry/OneDrive/Documents/XPath/XPath-master/Resources.xml"childElementCount: 7childNodes: NodeList(15) [text, title, text, author, text, price, text, description, text, metadata, text, where_found, text, format, text]children: HTMLCollection(7) [title, author, price, description, metadata, where_found, format]classList: DOMTokenList [value: '']className: ""clientHeight: 0clientLeft: 0clientTop: 0clientWidth: 0currentCSSZoom: 1elementTiming: ""firstChild: textfirstElementChild: titleid: "eb1"innerHTML: "\n\t\t<title>Learn XPath Fast</title>\n\t\t<author>D Armstrong</author>\n\t\t<price>2.99</price>\n\t\t<description>A step-by-step course in using XPath to query XML, with practice exercises.</description>\n\t\t<metadata>\n\t\t\t<keyword>XPath</keyword>\n\t\t\t<keyword>XML</keyword>\n\t\t\t<keyword>Exercises</keyword>\n\t\t</metadata>\n\t\t<where_found>Amazon</where_found>\n\t\t<format>Ebook</format>\n\t"isConnected: truelastChild: textlastElementChild: formatlocalName: "book"namespaceURI: nullnextElementSibling: video#vd1nextSibling: textnodeName: "book"nodeType: 1nodeValue: nullonbeforecopy: nullonbeforecut: nullonbeforepaste: nullonfullscreenchange: nullonfullscreenerror: nullonsearch: nullonwebkitfullscreenchange: nullonwebkitfullscreenerror: nullouterHTML: "<book id=\"eb1\" lang=\"English\">\n\t\t<title>Learn XPath Fast</title>\n\t\t<author>D Armstrong</author>\n\t\t<price>2.99</price>\n\t\t<description>A step-by-step course in using XPath to query XML, with practice exercises.</description>\n\t\t<metadata>\n\t\t\t<keyword>XPath</keyword>\n\t\t\t<keyword>XML</keyword>\n\t\t\t<keyword>Exercises</keyword>\n\t\t</metadata>\n\t\t<where_found>Amazon</where_found>\n\t\t<format>Ebook</format>\n\t</book>"ownerDocument: documentparentElement: indexparentNode: indexpart: DOMTokenList [value: '']prefix: nullpreviousElementSibling: nullpreviousSibling: textrole: nullscrollHeight: 0scrollLeft: 0scrollTop: 0scrollWidth: 0shadowRoot: nullslot: ""tagName: "book"textContent: "\n\t\tLearn XPath Fast\n\t\tD Armstrong\n\t\t2.99\n\t\tA step-by-step course in using XPath to query XML, with practice exercises.\n\t\t\n\t\t\tXPath\n\t\t\tXML\n\t\t\tExercises\n\t\t\n\t\tAmazon\n\t\tEbook\n\t"[[Prototype]]: Elementlength: 1[[Prototype]]: Array(0)
+$x('//index/*[metadata/keyword]')
+(5) [book#eb1, video#vd1, book#eb2, book#pb1, website]
+$x('//index/*[metadata/keyword[last()]]')
+(5) [book#eb1, video#vd1, book#eb2, book#pb1, website]0: book#eb11: video#vd12: book#eb23: book#pb14: websitelength: 5[[Prototype]]: Array(0)
+$x('//index/*[metadata/keyword[last()]="Testing"]')
+[video#vd1]
+$x('//index/*[metadata/keyword[3]]')
+(4) [book#eb1, video#vd1, book#eb2, book#pb1]
+$x('not(true())')
+false
+$x('not(false())')
+true
+$x('not(1=2)')
+true
+$x('//book[not(position()=1)]')
+(3) [book#eb2, book#pb1, book#eb3]
+$x('//book[not(position()=last())]')
+(3) [book#eb1, book#eb2, book#pb1]
+$x('//index/*[not(url)]')
+(6) [book#eb1, video#vd1, audiobook, book#eb2, book#pb1, book#eb3]
+$x('//index/*[not(price)]')
+(4) [video#vd1, audiobook, webpage, website]
+$x('//index/*[not(price>10)]')
+(7) [book#eb1, video#vd1, audiobook, book#eb2, book#eb3, webpage, website]
+$x('//title[lang("en-us")]')
+[]
+$x('//book[last()]/@lang')
+[lang]0: langlength: 1[[Prototype]]: Array(0)
+$x('//book//@lang')
+(4) [lang, lang, lang, lang]
+$x('//book[position()<3]')
+(2) [book#eb1, book#eb2]
+$x('//book[position()!=last()]')
+(3) [book#eb1, book#eb2, book#pb1]
+$x('//book[position()<last()]')
+(3) [book#eb1, book#eb2, book#pb1]
+$x('//book[price=0]')
+[book#eb3]
+$x('//index/*[not(price!=0)]')
+(5) [video#vd1, audiobook, book#eb3, webpage, website]
+$x('//book[1]/price - 2.50')
+0.4900000000000002
+$x('//book[position()=last()-1]')
+[book#pb1]
+$x('//book[price div 2 < 10]')
+(4) [book#eb1, book#eb2, book#pb1, book#eb3]
+$x('//book[position() mod 2 = 0]')
+(2) [book#eb2, book#eb3]
+$x('//author | //narrator | //presenter')
+(7) [author, author, author, author, author, narrator, presenter]
+$x('//comment() | //processing-instruction()')
+(6) [comment, comment, comment, comment, comment, TestTarget]
+$x('(//book/metadata/keyword)[last()]')
+[keyword]
+$x('(//index//*)[last()]')
+[format]
+$x('(//video | //audiobook | //website)//keyword')
+(5) [keyword, keyword, keyword, keyword, keyword]
+$x('//book[format="Paperback" and price > 10]')
+[book#pb1]
+$x('//book[format="ebook" or format="Ebook"]')
+(3) [book#eb1, book#eb2, book#eb3]
