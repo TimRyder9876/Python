@@ -1,7 +1,7 @@
 Two projects:
 
 1) Scrape quotes.toscrape.com
-  * Run 
+  * Run scrapy runspider quotes_spider_w_mysql.py
   * Go to https://quotes.toscrape.com/tag/humor/ URL
   * Retrieve the items author and quote text from the page
   * Store the item objects to the QuotesProjectItem item class 
@@ -13,3 +13,15 @@ Two projects:
   * Create the quotes table if iit does not exist
   * Save the author and text objects to the table
   * Close the database and cursor
+
+2) Scrape the rosters from the Pittsburgh Steelers Super Bowl teams by year
+* Run scrapy runspider Steelers_Super_Bowls.py -o steeler_super_bowl_rosters.csv to create csv file
+* Go to https://en.wikipedia.org/wiki/Pittsburgh_Steelers URL
+* Retrieve the attributes of the Super Bowl championship years using XPath 
+* From the attributes above retrieve the season year URLs using XPath
+  - pass the year value in the .follow using a meta variable
+* Follow the URLs
+* Find the player roster list using XPath
+* Retrieve the player name and roster year
+* Store the item objects in the WikispiderItem class in items.py
+* output the WikispiderItem class to a csv file "steeler_super_bowl_rosters"
